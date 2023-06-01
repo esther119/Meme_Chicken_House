@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My test page</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,700&display=swap" rel="stylesheet">
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+  <section class="slider_section">
+    <div class="detail-box">
+
+      
+      <h1>
+        Chicken Family <br>
+        <!-- <h2> -->
+        <span>
+          There are four people in this family.
+        </span>
+      </h1>
+      <div class="container">
+        <div class="left-column">
+      <p>
+      <ul> <!-- changed to list in the tutorial -->
+        <li>Taiwanese applicant: A Chinese girl who really wants to be included as a Taiwanese. To do so, she tries to <em>have fun</em> with Taiwanese. </li>
+        <li> <s>An</s> THE aisan: Nothing special, because she is one of the Asians among all for brown people. </li>
+        <li>The chicken: Randomly being called a pet and <multiple> evolved to a Taiwanese chicken for no reason. </multiple> </li>
+        <li>The roaster: The Taiwanese girl who roasts people so well and makes them laugh.</li>
+      </ul>
+      </p>
+      </div>
+      <div class="right-column">
+    
+      <p>
+
+      <img src="images/taiwanese_immigrants.jpeg" alt="taiwanese_immigrants" width="50%">
+
+      
+      <!-- <p>Read more to learn about our mission.</p> -->
+    </div>
+    </div>
+    <!-- <img src="images/chicken.png" id="image" onclick="playSound()" width=30%">
+    <audio id="audio" src="sounds/Chicken_Charlotte.m4a"></audio>  -->
+  </section>
+  <script type="module">
+
+    import { annotate, annotationGroup } from 'https://unpkg.com/rough-notation?module';
+    const n1 = document.querySelector('em');
+    const n2 = document.querySelector('s');
+    const n3 = document.querySelector('h1');
+    const n4 = document.querySelector('span');
+    const n5 = document.querySelector('multiple');
+
+    const a1 = annotate(n1, { type: 'underline', color: 'blue', padding: [0, 2]});
+    const a2 = annotate(n2, { type: 'crossed-off', color: 'red'});
+    const a3 = annotate(n3, { type: 'box', color: 'orange' });
+    const a4 = annotate(n4, { type: 'highlight', color: 'lightblue', iterations: 1, multiline: true });
+    const a5 = annotate(n5, { type: 'highlight', color: 'yellow', iterations: 3, multiline: true});
+    // a1.show();
+    // a2.show();
+    // a3.show();
+    // a4.show();
+    // a5.show();
+    const ag = annotationGroup([a1, a2, a3, a4, a5]);
+    ag.show();
+
+  </script> 
+  <script src="scripts/main.js"></script>
+
+
+</body>
+
+</html>
