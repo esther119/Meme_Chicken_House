@@ -1,15 +1,21 @@
 
+const myImages = document.querySelectorAll("img.target-image");
 
+myImages.forEach((image) => {
+  image.onclick = () => {
+    const mySrc = image.getAttribute("src");
+    if (mySrc === "images/taiwanese_immigrants.jpeg") {
+      image.setAttribute("src", "images/taiwanese_immigrants2.jpeg");
+    } else {
+      image.setAttribute("src", "images/taiwanese_immigrants.jpeg");
+    }
+  };
+});
 
-const myImage = document.querySelector("img");
-
-myImage.onclick = () => {
-  const mySrc = myImage.getAttribute("src");
-  if (mySrc === "images/taiwanese_immigrants.jpeg") {
-    myImage.setAttribute("src", "images/taiwanese_immigrants2.jpeg");
-  } else {
-    myImage.setAttribute("src", "images/taiwanese_immigrants.jpeg");
-  }
+function soundPOV(){
+  var sound = new Audio('./sounds/collapse.wav');
+  sound.volume = 0.05; 
+  sound.play();
 };
 
 function playSound() {
@@ -17,27 +23,17 @@ function playSound() {
   audio.play();
 }
 
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
-
-// import { annotate } from 'https://unpkg.com/rough-notation?module';
-
-// // Code for Rough Notation annotations
-// document.addEventListener('DOMContentLoaded', () => {
-//   const n3 = document.querySelector('h1');
-//   const n4 = document.querySelector('span');
-//   const a3 = annotate(n3, { type: 'box', color: 'orange' });
-//   const a4 = annotate(n4, { type: 'highlight', color: 'yellow', iterations: 1, multiline: true });
-//   a3.show();
-//   a4.show();
-// });
-
-
-// import { annotate } from 'https://unpkg.com/rough-notation?module';
-
-// const n3 = document.querySelector('h1');
-// const n4 = document.querySelector('span');
-// const a3 = annotate(n3, { type: 'box', color: 'orange' });
-// const a4 = annotate(n4, { type: 'highlight', color: 'yellow', iterations: 1, multiline: true });
-// a3.show();
-// a4.show();
-
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = 'max-content';
+    } 
+  });
+}

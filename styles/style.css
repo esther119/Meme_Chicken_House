@@ -1124,20 +1124,117 @@ a:focus {
   color: #ffffff;
 }
 
-.container {
+.doubel_col_container {
   display: flex;
+  gap: 20px;
 }
 
 .left-column {
-  flex-basis: 60%; /* Adjust the width as needed */
+  width: 50%; /* Adjust the width as needed */
+  margin: 20px;
+  /* background-color: #f1f1f1; */
+}
+.middle-column {
+  flex-basis: 30%; /* Adjust the width as needed */
   /* background-color: #f1f1f1; */
 }
 
 .right-column {
-  flex-basis: 60%; /* Adjust the width as needed */
+  width: 50%; /* Adjust the width as needed */
   /* background-color: #e1e1e1; */
 }
 
 
+.shake-image:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-5deg); }
+  20% { transform: translate(-3px, 0px) rotate(5deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(5deg); }
+  50% { transform: translate(-1px, 2px) rotate(-5deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-5deg); }
+  80% { transform: translate(-1px, -1px) rotate(5deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-5deg); }
+}
+
+
+.pointer {cursor: pointer;}
+
+/* Dashed border */
+hr.dashed {
+  border-top: 2px dashed orange;
+}
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */
+
+/*Style on collapsible*/
+
+
+.collapse-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%; 
+} 
+
+.collapsible {
+  background-color: lightblue;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-family:"Open Sans", sans-serif;
+}
+
+.active, .collapsible:hover {
+  background-color: whitesmoke;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: black;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.drop_down_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  /* padding: 0 18px;  */
+  max-height: 0;
+  overflow: auto;
+  transition: max-height 0.2s ease-out;
+  background-color: whitesmoke;
+  width: 100%;
+  max-width: max-content;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Default */
+  justify-content: space-between;
+  height: 90%;
+  margin: 2 auto auto 2;
+  padding: 0;
+}
+

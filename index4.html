@@ -15,37 +15,53 @@
   <section class="slider_section">
     <div class="detail-box">
 
-      
-      <h1>
-        Chicken Family <br>
-        <!-- <h2> -->
-        <span>
-          There are four people in this family.
-        </span>
-      </h1>
-      <div class="container">
-        <div class="left-column">
-      <p>
-      <ul> <!-- changed to list in the tutorial -->
-        <li>Taiwanese applicant: A Chinese girl who really wants to be included as a Taiwanese. To do so, she tries to <em>have fun</em> with Taiwanese. </li>
-        <li> <s>An</s> THE aisan: Nothing special, because she is one of the Asians among all for brown people. </li>
-        <li>The chicken: Randomly being called a pet and <multiple> evolved to a Taiwanese chicken for no reason. </multiple> </li>
-        <li>The roaster: The Taiwanese girl who roasts people so well and makes them laugh.</li>
-      </ul>
-      </p>
+      <div style="display: flex; gap: 16px; height: 300px; align-items: center;">
+        <h1 style="height: max-content;">
+          Chicken Family <br>
+          <!-- <h2> -->
+          <span>
+            There are four people in this family.
+          </span>
+        </h1>
+        <!-- <div> -->
+        <img src="images/chicken.png" id="image" class="shake-image pointer" onclick="playSound()" width=20%"
+          style="object-fit: contain; max-height: 240px; ">
+        <audio id="audio" src="sounds/Chicken_Charlotte.m4a"></audio>
       </div>
-      <div class="right-column">
-    
-      <p>
+      <!-- </div> -->
+      <div>
+        <!-- <div class="left-column"> -->
+        <div class="doubel_col_container" style="max-height: 500px;">
+          <div class=" left-column">
+            <p>
+            <ul> <!-- changed to list in the tutorial -->
+              <li>Taiwanese applicant: A Chinese girl who really wants to be included as a Taiwanese. To do so, she
+                tries
+                to <em>have fun</em> with Taiwanese. </li>
+              <li> <s>An</s> THE aisan: Nothing special, because she is one of the Asians among all for brown people.
+              </li>
+              <li>The chicken: Randomly being called a pet and <multiple> evolved to a Taiwanese chicken for no reason.
+                </multiple>
+              </li>
+              <li>The roaster: The Taiwanese girl who roasts people so well and makes them laugh.</li>
+            </ul>
+            </p>
+          </div>
+          <div class="right-column">
+            <!-- <div class="doubel_col_container right-column" style="gap:25px"> -->
+            <div>
+              <p>
 
-      <img src="images/taiwanese_immigrants.jpeg" alt="taiwanese_immigrants" width="50%">
+                <img src="images/taiwanese_immigrants.jpeg" class="pointer target-image" alt="taiwanese_immigrants"
+                  style="object-fit: contain; max-height: 450px;">
 
-      
-      <!-- <p>Read more to learn about our mission.</p> -->
-    </div>
-    </div>
-    <!-- <img src="images/chicken.png" id="image" onclick="playSound()" width=30%">
-    <audio id="audio" src="sounds/Chicken_Charlotte.m4a"></audio>  -->
+
+                <!-- <p>Read more to learn about our mission.</p> -->
+            </div>
+          </div>
+
+
+        </div>
   </section>
   <script type="module">
 
@@ -56,23 +72,56 @@
     const n4 = document.querySelector('span');
     const n5 = document.querySelector('multiple');
 
-    const a1 = annotate(n1, { type: 'underline', color: 'blue', padding: [0, 2]});
-    const a2 = annotate(n2, { type: 'crossed-off', color: 'red'});
+    const a1 = annotate(n1, { type: 'underline', color: 'blue', padding: [0, 2] });
+    const a2 = annotate(n2, { type: 'crossed-off', color: 'red' });
     const a3 = annotate(n3, { type: 'box', color: 'orange' });
     const a4 = annotate(n4, { type: 'highlight', color: 'lightblue', iterations: 1, multiline: true });
-    const a5 = annotate(n5, { type: 'highlight', color: 'yellow', iterations: 3, multiline: true});
-    // a1.show();
-    // a2.show();
-    // a3.show();
-    // a4.show();
-    // a5.show();
-    const ag = annotationGroup([a1, a2, a3, a4, a5]);
+    const a5 = annotate(n5, { type: 'highlight', color: 'yellow', iterations: 3, multiline: true });
+    const ag = annotationGroup([a3, a4, a1, a2, a5]);
     ag.show();
 
-  </script> 
-  <script src="scripts/main.js"></script>
+  </script>
 
 
 </body>
+
+<body style="display: flex; flex-direction: column; align-items: center;">
+  <hr class="dashed">
+
+  <h2> Funny Knowledge Q&A </h2>
+
+
+  <div class="collapse-container">
+    <button class="collapsible" onclick=soundPOV()> Who is the love of Diana's life? (Pick <strong>one</strong> from
+      Gorden, Jason,
+      Aniket, and many please) </button>
+    <div class="drop_down_content">
+      <img src="images/propose.png" id="image" width=100%">
+      <p> If you think of this Indian, it's the wrong answer. </p>
+      <img src="images/god.png" id="image" width=100%">
+      <p> For sure all loving man. 愛神必得永生 </p>
+    </div>
+
+
+    <button class="collapsible" onclick=soundPOV()>How does Taiwan immigration center support their chicken?</button>
+    <div class="drop_down_content">
+      <img src="images/misunderstanding.PNG" id="image" width=100%">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</p>
+    </div>
+
+    <button class="collapsible" onclick=soundPOV()>How do Indians learn how to get girls? </button>
+    <div class="drop_down_content">
+      <p> Strategize with other funny Indians. </p>  
+            <!-- <video controls="controls" style="max-height: 600px">
+        <source src="videos/Indians.MOV">
+      </video> -->
+    </div>
+
+
+
+</body>
+<script src="scripts/main.js"></script>
 
 </html>
