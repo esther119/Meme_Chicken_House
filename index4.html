@@ -83,45 +83,89 @@
   </script>
 
 
-</body>
+  <div style="display: flex; flex-direction: column; align-items: center;">
+    <hr class="dashed">
 
-<body style="display: flex; flex-direction: column; align-items: center;">
+    <h1 class="blue-box"> Funny Knowledge Q&A </h1>
+
+    <p> This is a real exam to evaluate if you are a real Taiwanese. <br>
+      If you correctly answer all of them, you will receive a gift.</p>
+    <br>
+
+
+    <div class="collapse-container">
+      <button class="collapsible" onclick=soundPOV()> Who is the love of Diana's life? (Pick <strong>one</strong> from
+        Gorden, Jason,
+        Aniket, and many please) </button>
+      <div class="drop_down_content">
+        <img src="images/propose.png" id="image" width=100%">
+        <p> If you think of this Indian, it's the wrong answer. </p>
+        <img src="images/god.png" id="image" width=100%">
+        <p> For sure is this all loving man. 愛神必得永生 </p>
+      </div>
+
+
+      <button class="collapsible" onclick=soundPOV()>How does Taiwan immigration center support their chicken?</button>
+      <div class="drop_down_content">
+        <video controls="autoplay" style="max-width: 500px;align-items: center;">
+          <source src="videos/support.MOV">
+        </video>
+        <p>They shower their chicken with love and attention.</p>
+      </div>
+
+      <button class="collapsible" onclick=soundPOV()>How does Taiwan immigration center support their
+        applicant?</button>
+      <div class="drop_down_content">
+        <a href="https://www.youtube.com/watch?v=PIb6AZdTr-A" target="_blank">
+          <img class=slow-shake-image src="images/girls.JPG" id="image" width="100%">
+        </a>
+        <p> Girls just wanna have fun.</p>
+      </div>
+
+      <button class="collapsible" onclick=soundPOV()>How does roaster support her center?</button>
+      <div class="drop_down_content">
+        <div class="image-container">
+          <!-- <div class ="half-width"> -->
+          <img src="images/misunderstanding.PNG" id="image1" width="100%">
+          <!-- </div> -->
+          <!-- <div class ="half-width"> -->
+          <img src="images/stickers.PNG" id="image2" width="100%">
+        </div>
+        <!-- </div> -->
+        <p> Here you go.</p>
+      </div>
+
+
+      <button class="collapsible" onclick=soundPOV()>How do Indians learn how to get girls? </button>
+      <div class="drop_down_content">
+        <video controls="autoplay" style="max-width: 500px;align-items: center;">
+          <source src="videos/Indians.MOV">
+        </video>
+        <p> Strategize with other funny Indians. (Look at their sparkling eyes!) </p>
+      </div>
+    </div>
+    <br>
+  </div>
   <hr class="dashed">
 
-  <h2> Funny Knowledge Q&A </h2>
+  <div class="js-container c_container" style="top:0px !important;"></div>
 
-
-  <div class="collapse-container">
-    <button class="collapsible" onclick=soundPOV()> Who is the love of Diana's life? (Pick <strong>one</strong> from
-      Gorden, Jason,
-      Aniket, and many please) </button>
-    <div class="drop_down_content">
-      <img src="images/propose.png" id="image" width=100%">
-      <p> If you think of this Indian, it's the wrong answer. </p>
-      <img src="images/god.png" id="image" width=100%">
-      <p> For sure all loving man. 愛神必得永生 </p>
+  <div style="text-align:center;margin-top:30px;position:  fixed;width:100%;height:100%;top:0px;left:0px;">
+    <div class="checkmark-circle">
+      <div class="background"></div>
+      <div class="checkmark draw"></div>
     </div>
+    <h1>Congratulations!</h1>
+    <p>You are all set. Well done!</p>
+    <button class="submit-btn" type="submit" onclick="alert('🥺🥺🥺🥺🥺\n Oh no you didn\'t!!!!!!!');">Continue</button>
+  </div>
 
-
-    <button class="collapsible" onclick=soundPOV()>How does Taiwan immigration center support their chicken?</button>
-    <div class="drop_down_content">
-      <img src="images/misunderstanding.PNG" id="image" width=100%">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat.</p>
-    </div>
-
-    <button class="collapsible" onclick=soundPOV()>How do Indians learn how to get girls? </button>
-    <div class="drop_down_content">
-      <p> Strategize with other funny Indians. </p>  
-            <!-- <video controls="controls" style="max-height: 600px">
-        <source src="videos/Indians.MOV">
-      </video> -->
-    </div>
 
 
 
 </body>
+
+
 <script src="scripts/main.js"></script>
 
 </html>
