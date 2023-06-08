@@ -235,7 +235,7 @@ a:focus {
 }
 
 .menu_btn-style {
-  position: fixed;
+  /* position: fixed; */
   right: 29px;
   top: 7px;
 }
@@ -265,7 +265,7 @@ a:focus {
 .overlay {
   height: 100%;
   width: 0;
-  position: fixed;
+  /* position: fixed; */
   z-index: 1;
   top: 0;
   left: 0;
@@ -1287,11 +1287,6 @@ ul {
 
 
 /* .confetti */
-body {
-  font-family: 'Roboto';
-  margin: 0;
-  padding: 0;
-}
 
 @keyframes confetti-slow {
   0% { transform: translate3d(0, 0, 0) rotateX(0) rotateY(0); }
@@ -1323,7 +1318,7 @@ body {
 .confetti-container {
   perspective: 700px;
   position: absolute;
-  overflow: hidden;
+  /* overflow: hidden; */
   top: 0;
   right: 0;
   bottom: 0;
