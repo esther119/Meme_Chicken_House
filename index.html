@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My chicken family</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,700&display=swap" rel="stylesheet">
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+  <section class="slider_section">
+    <div class="detail-box">
+
+      <div style="display: flex; gap: 16px; height: 300px; align-items: center;">
+        <h1 style="height: max-content;">
+          Chicken Family <br>
+          <!-- <h2> -->
+          <span>
+            There are four people in this family.
+          </span>
+        </h1>
+        <!-- <div> -->
+        <img src="images/chicken.png" id="image" class="shake-image pointer" onclick="playSound()" width=20%"
+          style="object-fit: contain; max-height: 240px; ">
+        <audio id="audio" src="sounds/Chicken_Charlotte.m4a"></audio>
+      </div>
+      <!-- </div> -->
+      <div>
+        <!-- <div class="left-column"> -->
+        <div class="doubel_col_container" style="max-height: 500px;">
+          <div class=" left-column">
+            <p>
+            <ul> <!-- changed to list in the tutorial -->
+              <li>Taiwanese applicant: A Chinese girl who really wants to be included as a Taiwanese. To do so, she
+                tries
+                to <em>have fun</em> with Taiwanese. </li>
+              <li> <s>An</s> THE asian: Nothing special, because she is one of the Asians among all for brown people.
+              </li>
+              <li>The chicken: Randomly being called a pet and <multiple> evolved to a Taiwanese chicken for no reason.
+                </multiple>
+              </li>
+              <li>The roaster: The Taiwanese girl who roasts people so well and makes them laugh.</li>
+            </ul>
+            </p>
+          </div>
+          <div class="right-column">
+            <!-- <div class="doubel_col_container right-column" style="gap:25px"> -->
+            <div>
+              <p>
+
+                <img src="images/taiwanese_immigrants.jpeg" class="pointer target-image" alt="taiwanese_immigrants"
+                  style="object-fit: contain; max-height: 450px; position:relative">
+
+
+                <!-- <p>Read more to learn about our mission.</p> -->
+            </div>
+          </div>
+
+
+        </div>
+  </section>
+  <script type="module">
+
+    import { annotate, annotationGroup } from 'https://unpkg.com/rough-notation?module';
+    const n1 = document.querySelector('em');
+    const n2 = document.querySelector('s');
+    const n3 = document.querySelector('h1');
+    const n4 = document.querySelector('span');
+    const n5 = document.querySelector('multiple');
+
+    const a1 = annotate(n1, { type: 'underline', color: 'blue', padding: [0, 2] });
+    const a2 = annotate(n2, { type: 'crossed-off', color: 'red' });
+    const a3 = annotate(n3, { type: 'box', color: 'orange' });
+    const a4 = annotate(n4, { type: 'highlight', color: 'lightblue', iterations: 1, multiline: true });
+    const a5 = annotate(n5, { type: 'highlight', color: 'yellow', iterations: 3, multiline: true });
+    const ag = annotationGroup([a3, a4, a1, a2, a5]);
+    ag.show();
+
+  </script>
+
+  <section>
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <hr class="dashed">
+
+      <h1 class="blue-box"> Funny Knowledge Q&A </h1>
+
+      <p> This is a real exam to evaluate if you are a real Taiwanese. <br>
+        If you correctly answer all of them, you will receive a gift.</p>
+      <br>
+
+
+      <div class="collapse-container">
+        <button class="collapsible" onclick=soundPOV()> Who is the love of Diana's life? (Pick <strong>one</strong> from
+          Gorden, Jason,
+          Aniket, and many please) </button>
+        <div class="drop_down_content">
+          <img src="images/propose.png" id="image" width=100%">
+          <p> If you think of this Indian, it's the wrong answer. </p>
+          <img src="images/god.png" id="image" width=100%">
+          <p> For sure is this all loving man. 愛神必得永生 </p>
+        </div>
+
+
+        <button class="collapsible" onclick=soundPOV()>How does Taiwan immigration center support their
+          chicken?</button>
+        <div class="drop_down_content">
+          <video controls="autoplay" style="max-width: 500px;align-items: center;">
+            <source src="videos/support.MOV">
+          </video>
+          <p>They shower their chicken with love and attention.</p>
+        </div>
+
+        <button class="collapsible" onclick=soundPOV()>How does Taiwan immigration center support their
+          applicant?</button>
+        <div class="drop_down_content">
+          <a href="https://www.youtube.com/watch?v=PIb6AZdTr-A" target="_blank">
+            <img class=slow-shake-image src="images/girls.JPG" id="image" width="100%">
+          </a>
+          <p> Girls just wanna have fun.</p>
+        </div>
+
+        <button class="collapsible" onclick=soundPOV()>How does roaster support her center?</button>
+        <div class="drop_down_content">
+          <div class="image-container">
+            <!-- <div class ="half-width"> -->
+            <img src="images/misunderstanding.PNG" id="image1" width="100%">
+            <!-- </div> -->
+            <!-- <div class ="half-width"> -->
+            <img src="images/stickers.PNG" id="image2" width="100%">
+          </div>
+          <!-- </div> -->
+          <p> Here you go.</p>
+        </div>
+
+
+        <button class="collapsible" onclick=soundPOV()>How do Indians learn how to get girls? </button>
+        <div class="drop_down_content">
+          <video controls="autoplay" style="max-width: 500px;align-items: center;">
+            <source src="videos/Indians.MOV">
+          </video>
+          <p> Strategize with other funny Indians. (Look at their sparkling eyes!) </p>
+        </div>
+      </div>
+      <br>
+    </div>
+
+  </section>
+  <hr class="dashed">
+
+  <section id="confetti-loc" style="position: relative;">
+    
+    <div style="text-align:center;">
+      <br>  
+      <div id="checkmark-circle">
+        <div id="background"></div>
+        <div id="checkmark" class = "draw"></div>
+      </div>
+      
+      <h1>Congratulations!</h1>
+      <p>Good job! You are a real Taiwanese!</p>
+
+      <button id="showImageBtn" onclick="soundAniket(); replaceElement();">Get my gift</button>      
+
+
+    </div>
+  </section>
+  <script src="scripts/confetti.js"></script>
+  
+
+
+</body>
+
+
+<script src="scripts/main.js"></script>
+
+</html>
