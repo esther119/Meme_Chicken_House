@@ -1,180 +1,108 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My chicken family</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,700&display=swap" rel="stylesheet">
-  <link href="styles/style.css" rel="stylesheet" type="text/css">
 
+<head>
+    <title>chicken</title>
+    <link href="styles/chicken.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
-  <section class="slider_section">
-    <div class="detail-box">
 
-      <div style="display: flex; gap: 16px; height: 300px; align-items: center;">
-        <h1 style="height: max-content;">
-          Chicken Family <br>
-          <!-- <h2> -->
-          <span>
-            There are four people in this family.
-          </span>
-        </h1>
-        <!-- <div> -->
-        <img src="images/chicken.png" id="image" class="shake-image pointer" onclick="playSound()" width=20%"
-          style="object-fit: contain; max-height: 240px; ">
-        <audio id="audio" src="sounds/Chicken_Charlotte.m4a"></audio>
-      </div>
-      <!-- </div> -->
-      <div>
-        <!-- <div class="left-column"> -->
-        <div class="doubel_col_container" style="max-height: 500px;">
-          <div class=" left-column">
-            <p>
-            <ul> <!-- changed to list in the tutorial -->
-              <li>Taiwanese applicant: A Chinese girl who really wants to be included as a Taiwanese. To do so, she
-                tries
-                to <em>have fun</em> with Taiwanese. </li>
-              <li> <s>An</s> THE asian: Nothing special, because she is one of the Asians among all for brown people.
-              </li>
-              <li>The chicken: Randomly being called a pet and <multiple> evolved to a Taiwanese chicken for no reason.
-                </multiple>
-              </li>
-              <li>The roaster: The Taiwanese girl who roasts people so well and makes them laugh.</li>
-            </ul>
-            </p>
-          </div>
-          <div class="right-column">
-            <!-- <div class="doubel_col_container right-column" style="gap:25px"> -->
-            <div>
-              <p>
+<body onload="fadeAndRedirect()">
+    <?xml version="1.0" encoding="UTF-8"?>
+    <svg width="200px" height="240px" viewBox="0 0 200 240" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" id="eggsvg">
+        <title>cracking-egg</title>
+        <desc>Created with Sketch.</desc>
+        <defs>
+            <path
+                d="M60,0 L60,0 L60,-1.42108547e-14 C93.137085,-2.02980385e-14 120,26.862915 120,60 L120,149 L0,149 L0,60 L0,60 C-4.05812251e-15,26.862915 26.862915,6.08718376e-15 60,0 Z"
+                id="path-1"></path>
+            <path
+                d="M15.5541748,21.9318557 C21.0770223,21.9318557 25.5541748,17.4547032 25.5541748,11.9318557 C25.5541748,6.40900816 21.0770223,1.93185566 15.5541748,1.93185566 C11.8722765,1.93185566 7.20560981,5.265189 1.55417481,11.9318557 C7.20560981,18.5985223 11.8722765,21.9318557 15.5541748,21.9318557 Z"
+                id="path-3"></path>
+            <path
+                d="M15.5541748,21.9318557 C21.0770223,21.9318557 25.5541748,17.4547032 25.5541748,11.9318557 C25.5541748,6.40900816 21.0770223,1.93185566 15.5541748,1.93185566 C11.8722765,1.93185566 7.20560981,5.265189 1.55417481,11.9318557 C7.20560981,18.5985223 11.8722765,21.9318557 15.5541748,21.9318557 Z"
+                id="path-5"></path>
+            <polygon id="path-7"
+                points="0.84833866 129.814433 10.8317441 122.204014 21.4153298 125.05071 44.0224901 110.424506 67 119.384873 90.1922136 103 104.932829 126.681536 121.114617 113.719006 144.555978 119.840768 176.640144 114.574736 196.895396 129.814433 212.987106 126.681536 212.987106 248.149059 5.16529475 248.149059">
+            </polygon>
+            <polygon id="path-9"
+                points="0.84833866 140.814433 10.8317441 133.204014 21.4153298 136.05071 44.0224901 121.424506 67 130.384873 90.1922136 114 104.932829 137.681536 121.114617 124.719006 144.555978 130.840768 176.640144 125.574736 196.895396 140.814433 212.987106 137.681536 212.987106 0.0995080672 1.7846937 0.0995080672">
+            </polygon>
+            <rect id="path-11" x="" y="0" width="" height="34"></rect>
+        </defs>
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Artboard" transform="translate(-276.000000, -116.000000)">
+                <g id="cracking-egg" transform="translate(270.000000, 105.000000)">
 
-                <img src="images/taiwanese_immigrants.jpeg" class="pointer target-image" alt="taiwanese_immigrants"
-                  style="object-fit: contain; max-height: 450px; position:relative">
+                    <g id="chick" transform="translate(47.000000, 46.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="face" fill="#FFEFB5" xlink:href="#path-1"></use>
+                        <g id="eye-left" mask="url(#mask-2)">
+                            <g transform="translate(23.000000, 24.000000)">
+                                <mask id="mask-4" fill="white">
+                                    <use xlink:href="#path-3"></use>
+                                </mask>
+                                <use id="eyewhite-left" stroke="none" fill="#FFFFFF" fill-rule="evenodd"
+                                    transform="translate(13.554175, 11.931856) rotate(-10.000000) translate(-13.554175, -11.931856) "
+                                    xlink:href="#path-3"></use>
+                                <circle id="eyeball-left" stroke="none" fill="#6E6E6E" fill-rule="evenodd"
+                                    mask="url(#mask-4)" cx="16" cy="12" r="5"></circle>
+                            </g>
+                        </g>
 
+                        <path
+                            d="M60.5,74.0208153 C65.1944204,74.0208153 69,70.2152357 69,65.5208153 C69,60.8263949 52,60.8263949 52,65.5208153 C52,70.2152357 55.8055796,74.0208153 60.5,74.0208153 Z"
+                            id="mouth" fill="#FF6363" mask="url(#mask-2)"></path>
+                        <g id="eye-right" mask="url(#mask-2)">
+                            <g transform="translate(71.000000, 24.000000)">
+                                <mask id="mask-6" fill="white">
+                                    <use xlink:href="#path-5"></use>
+                                </mask>
+                                <use id="eyewhite-right" stroke="none" fill="#FFFFFF" fill-rule="evenodd"
+                                    transform="translate(13.554175, 11.931856) scale(-1, 1) rotate(-10.000000) translate(-13.554175, -11.931856) "
+                                    xlink:href="#path-5"></use>
+                                <circle id="eyeball-right" stroke="none" fill="#6E6E6E" fill-rule="evenodd"
+                                    mask="url(#mask-6)" cx="12" cy="12" r="5"></circle>
+                            </g>
+                        </g>
+                    </g>
 
-                <!-- <p>Read more to learn about our mission.</p> -->
-            </div>
-          </div>
-
-
-        </div>
-  </section>
-  <script type="module">
-
-    import { annotate, annotationGroup } from 'https://unpkg.com/rough-notation?module';
-    const n1 = document.querySelector('em');
-    const n2 = document.querySelector('s');
-    const n3 = document.querySelector('h1');
-    const n4 = document.querySelector('span');
-    const n5 = document.querySelector('multiple');
-
-    const a1 = annotate(n1, { type: 'underline', color: 'blue', padding: [0, 2] });
-    const a2 = annotate(n2, { type: 'crossed-off', color: 'red' });
-    const a3 = annotate(n3, { type: 'box', color: 'orange' });
-    const a4 = annotate(n4, { type: 'highlight', color: 'lightblue', iterations: 1, multiline: true });
-    const a5 = annotate(n5, { type: 'highlight', color: 'yellow', iterations: 3, multiline: true });
-    const ag = annotationGroup([a3, a4, a1, a2, a5]);
-    ag.show();
-
-  </script>
-
-  <section>
-    <div style="display: flex; flex-direction: column; align-items: center;">
-      <hr class="dashed">
-
-      <h1 class="blue-box"> Funny Knowledge Q&A </h1>
-
-      <p> This is a real exam to evaluate if you are a real Taiwanese. <br>
-        If you correctly answer all of them, you will receive a gift.</p>
-      <br>
-
-
-      <div class="collapse-container">
-        <button class="collapsible" onclick=soundPOV()> Who is the love of Diana's life? (Pick <strong>one</strong> from
-          Gorden, Jason,
-          Aniket, and many please) </button>
-        <div class="drop_down_content">
-          <img src="images/propose.png" id="image" width=100%">
-          <p> If you think of this Indian, it's the wrong answer. </p>
-          <img src="images/god.png" id="image" width=100%">
-          <p> For sure is this all loving man. 愛神必得永生 </p>
-        </div>
-
-
-        <button class="collapsible" onclick=soundPOV()>How does Taiwan immigration center support their
-          chicken?</button>
-        <div class="drop_down_content">
-          <video controls="autoplay" style="max-width: 500px;align-items: center;">
-            <source src="videos/support.MOV">
-          </video>
-          <p>They shower their chicken with love and attention.</p>
-        </div>
-
-        <button class="collapsible" onclick=soundPOV()>How does Taiwan immigration center support their
-          applicant?</button>
-        <div class="drop_down_content">
-          <a href="https://www.youtube.com/watch?v=PIb6AZdTr-A" target="_blank">
-            <img class=slow-shake-image src="images/girls.JPG" id="image" width="100%">
-          </a>
-          <p> Girls just wanna have fun.</p>
-        </div>
-
-        <button class="collapsible" onclick=soundPOV()>How does roaster support her center?</button>
-        <div class="drop_down_content">
-          <div class="image-container">
-            <!-- <div class ="half-width"> -->
-            <img src="images/misunderstanding.PNG" id="image1" width="100%">
-            <!-- </div> -->
-            <!-- <div class ="half-width"> -->
-            <img src="images/stickers.PNG" id="image2" width="100%">
-          </div>
-          <!-- </div> -->
-          <p> Here you go.</p>
-        </div>
-
-
-        <button class="collapsible" onclick=soundPOV()>How do Indians learn how to get girls? </button>
-        <div class="drop_down_content">
-          <video controls="autoplay" style="max-width: 500px;align-items: center;">
-            <source src="videos/Indians.MOV">
-          </video>
-          <p> Strategize with other funny Indians. (Look at their sparkling eyes!) </p>
-        </div>
-      </div>
-      <br>
-    </div>
-
-  </section>
-  <hr class="dashed">
-
-  <section id="confetti-loc" style="position: relative;">
-    
-    <div style="text-align:center;">
-      <br>  
-      <div id="checkmark-circle">
-        <div id="background"></div>
-        <div id="checkmark" class = "draw"></div>
-      </div>
-      
-      <h1>Congratulations!</h1>
-      <p>Good job! You are a real Taiwanese!</p>
-
-      <button id="showImageBtn" onclick="soundAniket(); replaceElement();">Get my gift</button>      
-
-
-    </div>
-  </section>
-  <script src="scripts/confetti.js"></script>
-  
-
-
+                    <g id="egg-lower" transform="translate(0.000000, 11.000000)">
+                        <mask id="mask-8" fill="white">
+                            <use xlink:href="#path-7"></use>
+                        </mask>
+                        <g id="crack-bottom"></g>
+                        <path
+                            d="M106,240 C161.228475,240 206,195.228475 206,140 C206,84.771525 161.228475,0 106,0 C50.771525,0 6,84.771525 6,140 C6,195.228475 50.771525,240 106,240 Z"
+                            id="egg2" fill="#FFFFFF" mask="url(#mask-8)"></path>
+                    </g>
+                    <g id="egg-upper">
+                        <mask id="mask-10" fill="white">
+                            <use xlink:href="#path-9"></use>
+                        </mask>
+                        <g id="crack-upper"></g>
+                        <path
+                            d="M106,251 C161.228475,251 206,206.228475 206,151 C206,95.771525 161.228475,11 106,11 C50.771525,11 6,95.771525 6,151 C6,206.228475 50.771525,251 106,251 Z"
+                            id="egg1" fill="#FFFFFF" mask="url(#mask-10)"></path>
+                    </g>
+                    <g id="crack" transform="translate(75.000000, 109.000000)">
+                        <mask id="mask-12" fill="white">
+                            <use xlink:href="#path-11"></use>
+                        </mask>
+                        <g id="crack-mask"></g>
+                        <polyline id="crack-full" stroke="#88ECFF" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round" mask="url(#mask-12)"
+                            points="-74.1516613 31.8144335 -64.1682559 24.2040144 -53.5846702 27.0507105 -30.9775099 12.4245057 -8 21.3848725 15.1922136 5 29.9328292 28.6815357 46.1146168 15.7190065 69.555978 21.8407678 101.640144 16.5747357 121.895396 31.8144335 137.987106 28.6815357">
+                        </polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </svg>
 </body>
-
-
-<script src="scripts/main.js"></script>
-
+<script src="scripts/opening.js"></script>
 </html>

@@ -11,7 +11,7 @@ function fadeAndRedirect() {
     setTimeout(function () {
         document.body.classList.add("fade-out");
         setTimeout(function () {
-            window.location.href = "index.html"; // Replace with the desired target page URL
+            window.location.href = "main_page.html"; // Replace with the desired target page URL
         }, 1000); // Adjust the fade-out delay as needed (in milliseconds)
     }, 8000); // Adjust the additional delay before fading (in milliseconds)
 }
