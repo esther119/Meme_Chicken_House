@@ -6,8 +6,8 @@ console.log(specificLocation);
 var confetti = new Confettiful(specificLocation);
 }
 
-const Confettiful = function(el) {
-
+const Confettiful = function(e1) {
+  var e1 = e1;
   
   // Globals
   var random = Math.random
@@ -24,11 +24,11 @@ const Confettiful = function(el) {
     , sizeMin = 3
     , sizeMax = 12 - sizeMin
     , eccentricity = 10
-    , deviation = 100
+    , deviation = 10
     , dxThetaMin = -.1
     , dxThetaMax = -dxThetaMin - dxThetaMin
-    , dyMin = .13
-    , dyMax = .18
+    , dyMin = .03
+    , dyMax = .05
     , dThetaMin = .4
     , dThetaMax = .7 - dThetaMin;
 
@@ -110,8 +110,8 @@ const Confettiful = function(el) {
 
   // Create the overarching container
   var container = document.createElement('div');
-  container.style.position = 'absolute';
-  container.style.top      = '0';
+  container.style.position = 'abosolute';
+  container.style.top      = '10px';
   container.style.left     = '0';
   container.style.width    = '100%';
   container.style.height   = '0';
@@ -181,8 +181,9 @@ const Confettiful = function(el) {
 
   function poof() {
     if (!frame) {
-      // Append the container
-      document.body.appendChild(container);
+      // Append the container to specificLocation
+      e1.appendChild(container);
+
 
       // Add confetti
       var theme = colorThemes[0]
@@ -212,7 +213,7 @@ const Confettiful = function(el) {
           return frame = requestAnimationFrame(loop);
 
         // Cleanup
-        document.body.removeChild(container);
+        e1.removeChild(container);
         frame = undefined;
       });
     }
